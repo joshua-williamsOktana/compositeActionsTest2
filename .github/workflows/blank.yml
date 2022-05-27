@@ -8,5 +8,5 @@ jobs:
       - id: foo
         uses: joshua-williamsOktana/compositeActionTest@main
       - name: Test Status
-        run: echo "The String is ${{ steps.foo.outputs.maven-status }}"
+        run: echo "${{ steps.foo.outputs.maven-status }}"
         shell: bash

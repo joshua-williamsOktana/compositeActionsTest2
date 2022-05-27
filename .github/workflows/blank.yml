@@ -10,5 +10,5 @@ jobs:
         uses: joshua-williamsOktana/compositeActionTest@main
         with:
           who-to-greet: 'Mona the Octocat'
-      - run: echo random-number ${{ steps.foo.outputs.random-number }}
+      - run: echo ${{ steps.foo.outputs.status }}
         shell: bash

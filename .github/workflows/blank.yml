@@ -7,6 +7,9 @@ jobs:
     steps:
       - id: foo
         uses: joshua-williamsOktana/compositeActionTest@main
+        with:
+          action-repo: 'joshua-williamsOktana/compositeActionTest'
+          action-branch: 'main'
       - name: Test Status
         run: echo "${{ steps.foo.outputs.maven-status }}"
         shell: bash
